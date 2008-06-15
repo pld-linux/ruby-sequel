@@ -10,7 +10,7 @@ URL:		http://sequel.rubyforge.org/
 BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	setup.rb = 3.3.1
-Requires:	ruby-builder
+Requires:	ruby-sequel_core
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
