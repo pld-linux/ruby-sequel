@@ -1,15 +1,15 @@
 Summary:	Sequel: The Database Toolkit for Ruby
 Name:		ruby-sequel
-Version:	2.4.0
+Version:	2.5.0
 Release:	1
 License:	Ruby's
 Group:		Development/Languages
 Source0:	http://gems.rubyforge.org/gems/sequel-%{version}.gem
-# Source0-md5:	6f496df294eae4b6f8c8d5ec89c0c93d
+# Source0-md5:	5522914401c90ebed052ccf1b6e3a829
 URL:		http://sequel.rubyforge.org/
 BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.277
-BuildRequires:	setup.rb = 3.3.1
+BuildRequires:	setup.rb = 3.4.1
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
