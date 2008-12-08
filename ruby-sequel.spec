@@ -1,12 +1,13 @@
 Summary:	Sequel: The Database Toolkit for Ruby
 Name:		ruby-sequel
-Version:	2.5.0
+Version:	2.8.0
 Release:	1
 License:	Ruby's
 Group:		Development/Languages
 Source0:	http://gems.rubyforge.org/gems/sequel-%{version}.gem
-# Source0-md5:	5522914401c90ebed052ccf1b6e3a829
+# Source0-md5:	5c8d2f6b75b38e46f6dddf862e6a56a0
 URL:		http://sequel.rubyforge.org/
+Patch0:	%{name}-rubygems.patch
 BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	setup.rb = 3.4.1
@@ -20,6 +21,7 @@ Sequel: The Database Toolkit for Ruby.
 %setup -q -c
 tar xf %{SOURCE0} -O data.tar.gz | tar xzv-
 cp %{_datadir}/setup.rb .
+%patch0 -p1
 
 %build
 ruby setup.rb config \
@@ -43,4 +45,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc rdoc
+%attr(755,root,root) %{_bindir}/sequel
 %{ruby_rubylibdir}/sequel*
