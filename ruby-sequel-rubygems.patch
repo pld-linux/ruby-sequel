@@ -1,0 +1,18 @@
+diff -ur ruby-sequel-2.8.0.orig/bin/sequel ruby-sequel-2.8.0/bin/sequel
+--- ruby-sequel-2.8.0.orig/bin/sequel	1969-12-31 17:00:00.000000000 -0700
++++ ruby-sequel-2.8.0/bin/sequel	2008-12-08 00:35:27.000000000 -0700
+@@ -1,6 +1,5 @@
+ #!/usr/bin/env ruby
+ 
+-require 'rubygems'
+ require 'optparse'
+ require 'sequel'
+ 
+@@ -50,7 +49,6 @@
+   end
+   
+   opts.on_tail("-v", "--version", "Show version") do
+-    class << Gem; attr_accessor :loaded_specs; end
+     begin
+       specs = Gem.loaded_specs['sequel']
+       puts "sequel #{specs.version} (#{specs.date.strftime '%Y-%m-%d'})"
