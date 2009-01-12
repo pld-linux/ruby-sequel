@@ -1,12 +1,12 @@
 Summary:	Sequel: The Database Toolkit for Ruby
 Summary(pl.UTF-8):	Sequel - zestaw narzędzi bazodanowych dla języka Ruby
 Name:		ruby-sequel
-Version:	2.8.0
+Version:	2.9.0
 Release:	1
 License:	Ruby's
 Group:		Development/Languages
 Source0:	http://gems.rubyforge.org/gems/sequel-%{version}.gem
-# Source0-md5:	5c8d2f6b75b38e46f6dddf862e6a56a0
+# Source0-md5:	302975a31a04c5cb03eb6873f758ec76
 Patch0:		%{name}-rubygems.patch
 URL:		http://sequel.rubyforge.org/
 BuildRequires:	rake
