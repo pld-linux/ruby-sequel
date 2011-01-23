@@ -9,7 +9,6 @@ Source0:	http://gems.rubyforge.org/gems/sequel-%{version}.gem
 # Source0-md5:	736c1577ea9d738d22b8f3eb110074ba
 Patch0:		%{name}-rubygems.patch
 URL:		http://sequel.rubyforge.org/
-BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	setup.rb >= 3.4.1
 #BuildArch:	noarch
