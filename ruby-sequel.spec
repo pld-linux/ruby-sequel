@@ -24,7 +24,7 @@ Sequel - zestaw narzędzi bazodanowych dla języka Ruby.
 %setup -q -c
 tar xf %{SOURCE0} -O data.tar.gz | tar xzv-
 cp %{_datadir}/setup.rb .
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 ruby setup.rb config \
